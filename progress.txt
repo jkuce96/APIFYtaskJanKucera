@@ -1,0 +1,30 @@
+START: 23:23
+
+MOCK API URL: "https://api.ecommerce.com/products"
+
+každý API call max 1000 produktů
+- overcoming this limitation (?) by requesting specific ranges of products
+každý produkt mezi 0 $ a 100.000 $
+
+query params: minPrice a maxPrice
+
+DOESNT SUPPORT ANY OTHER PARAMETERS
+
+SINGLE ARRAY CALLED "PRODUCTS"
+
+example response:
+
+{
+    "total": 99999,
+    "count": 1000,
+    "products": [{}, {}, ...]
+}
+
+products array of length of "count"
+
+
+"IF you don't know the number of lines in the report ahead of time, you should replace your for loop with a while loop and break out of it when after receiving less than 1000 lines:"
+https://stackoverflow.com/questions/66013360/api-how-to-loop-through-a-dynamic-range-while-moving-the-stop
+
+
+
